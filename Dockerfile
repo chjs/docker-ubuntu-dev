@@ -11,6 +11,7 @@ RUN apt-get install -y vim build-essential git ctags tmux libpmem-dev
 RUN apt-get install -y man manpages-posix
 
 ADD vimrc /root/.vimrc
+ADD tmux.conf /root/.tmux.conf
 WORKDIR /root
 
 ENTRYPOINT ["/usr/bin/tmux", "new", "-s", "session"]

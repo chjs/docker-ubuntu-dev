@@ -1,7 +1,7 @@
 run: build
 	docker run \
 	--rm -it \
-	-v=`pwd`/data:/root/data \
+	-v=`pwd`/workplace:/root/workplace \
 	-e TZ=Asia/Seoul \
 	--hostname=docker-ubuntu \
 	ubuntu-dev:18.04 /bin/bash
