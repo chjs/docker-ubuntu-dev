@@ -8,7 +8,7 @@ RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:' \
 RUN apt-get update
 RUN apt-get install -y tzdata
 RUN apt-get install -y vim build-essential gdb git ctags tmux libpmem-dev
-RUN apt-get install -y man manpages-posix
+RUN apt-get install -y man manpages-posix manpages-posix-dev
 
 ADD vimrc /root/.vimrc
 ADD tmux.conf /root/.tmux.conf
