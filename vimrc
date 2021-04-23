@@ -13,3 +13,4 @@ set showcmd
 set showmode
 set visualbell
 set hlsearch
+highlight Search ctermfg=Red
